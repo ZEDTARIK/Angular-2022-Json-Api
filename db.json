@@ -1,0 +1,19 @@
+{
+  "users":[],
+  "products":[
+      {
+          "id":1,
+          "productName": "OMO MATIC",
+          "inStock":15,
+          "isAvailable": true,
+          "notifications": false
+      }, 
+      {
+          "id":2,
+          "productName": "ARIAL",
+          "inStock":2,
+          "isAvailable": true,
+          "notifications": true
+      }
+  ]
+}
