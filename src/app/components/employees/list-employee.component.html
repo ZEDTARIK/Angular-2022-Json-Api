@@ -1,0 +1,60 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-primary" *ngFor="let employee of employees">
+      <div class="panel-heading">
+        <div class="panel-title">
+          {{ employee.name }}
+        </div>
+      </div>
+
+      <div class="panel-body">
+        <div class="col-xs-10">
+          <div class="row vertical-align">
+            <!-- tag img -->
+            <div class="col-xs-4">
+              <img [src]="employee.photoPath" class="imageClass">
+            </div>
+            <!-- tag details of employee-->
+            <div class="col-xs-8">
+              <div class="row">
+
+                <!-- tag display Label-->
+                <div class="col-xs-6">Gender</div>
+                <!-- tag display value of Label-->
+                <div class="col-xs-6"> {{ employee.gender }} </div>
+
+                <!-- tag display Label-->
+                <div class="col-xs-6">Contact Preference</div>
+                <!-- tag display value of Label-->
+                <div class="col-xs-6"> {{ employee.contactPreference }} </div>
+
+                <!-- tag display Label-->
+                <div class="col-xs-6">Email</div>
+                <!-- tag display value of Label-->
+                <div class="col-xs-6"> {{ employee.email }} </div>
+
+                <!-- tag display Label-->
+                <div class="col-xs-6">Date Of Birth</div>
+                <!-- tag display value of Label-->
+                <div class="col-xs-6"> {{ employee.dateOfBirth | date }} </div>
+
+                <!-- tag display Label-->
+                <div class="col-xs-6">Department</div>
+                <!-- tag display value of Label-->
+                <div class="col-xs-6"> {{ employee.department }} </div>
+
+                <!-- tag display Label-->
+                <div class="col-xs-6">Is Active</div>
+                <!-- tag display value of Label-->
+                <div class="col-xs-6"> {{ employee.isActive }} </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
